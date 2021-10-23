@@ -1,20 +1,17 @@
-console.log("emir")
-let dolarDun = "9.2"
+let student = { id: 1, name: "emir" }
 
-{
-    let dolarDun = "2.2"
-
+function save(student, puan = 10) {
+    console.log(student.name + " : " + puan)
 }
 
-console.log(dolarDun)
+save(student, 67); // => gönderdiğim değeri aldı
 
-const euroDun = 11.2
-    //euroDun = 2 => euroDun is read only
-console.log(euroDun)
-
-let krediler = ["Konut Kredisi", "Emlak Konut Kredisi", "Komu Konut Kredisi"]
-
-for (let i = 0; i < krediler.length; i++) {
-    console.log(krediler[i])
-
+function read(puan = 10, student) {
+    console.log(student.name + " : " + puan)
 }
+
+read(undefined, student)
+
+let students = [student, { id: 2, name: "emirhan" }]
+
+console.log(students)
