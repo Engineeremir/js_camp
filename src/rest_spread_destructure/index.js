@@ -30,6 +30,7 @@ console.log(high)
 console.log(veryHigh)
 console.log(maximum)
 
+
 function someFunction([small1], number) {
     console.log(small1)
 }
